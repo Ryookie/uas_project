@@ -1,0 +1,18 @@
+/* Add your custom styles here */
+body {
+    background-color: #f8fafc;
+    font-family: 'Nunito', sans-serif;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background-color: #3490dc;
+    border-color: #3490dc;
+}
+
+.btn-link {
+    color: #3490dc;
+}
