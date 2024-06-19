@@ -117,7 +117,7 @@
 // Log::info('Users:', $usersArray);
 
 //     echo "Users List:\n";
-//     foreach ($users as $user) {
+//     for each ($users as $user) {
 //         echo "ID: " . $user['id'] . ", Name: " . $user['name'] . ", Email: " . $user['email'] . "\n";
     // }
 // } catch (\Exception $e) {
