@@ -111,7 +111,7 @@
 // $users = User::all();
 
 // Convert the collection to an array
-// $usersArray = $users->toArray();
+// $usersArray = $users->toArray();w
 
 // Log the array of objects
 // Log::info('Users:', $usersArray);
