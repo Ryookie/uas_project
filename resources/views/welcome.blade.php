@@ -53,7 +53,7 @@
     <div class="container">
         <div class="title">Welcome to Mobile Banking</div>
         <div class="subtitle">Manage your finances anytime, anywhere</div>
-        <a href="{{ route('login') }}" class="btn" method="POST">Login</a>
+        <a href="{{ route('login') }}" class="btn">Login</a>
     </div>
 </body>
 </html>

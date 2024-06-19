@@ -70,7 +70,7 @@
             text-decoration: none;
             transition: color 0.3s ease;
             display: block;
-            text-align: center; /* Center align the link */
+            text-align: center; /* Center to align the link */
             margin-top: 10px; /* Added margin */
         }
         .btn-link:hover {
@@ -85,13 +85,55 @@
             z-index: 2; /* Ensure the icon stays on top */
         }
     </style>
+
+
 </head>
 <body>
+
+
+
+<!-- // use GuzzleHttp\Client;
+// use Illuminate\Support\Facades\Log;
+
+// // Assuming you have an array of User objects
+
+// $client = new Client();
+
+// try {
+    // $response = $client->request('GET', 'http://127.0.0.1:8000/api/getUsers', [
+    //     'headers' => [
+    //         'Accept' => 'application/json',
+    //     ],
+    // ]);
+
+    // $users = json_decode($response->getBody()->getContents(), true);
+    
+// $users = User::all();
+
+// Convert the collection to an array
+// $usersArray = $users->toArray();
+
+// Log the array of objects
+// Log::info('Users:', $usersArray);
+
+//     echo "Users List:\n";
+//     foreach ($users as $user) {
+//         echo "ID: " . $user['id'] . ", Name: " . $user['name'] . ", Email: " . $user['email'] . "\n";
+    // }
+// } catch (\Exception $e) {
+//     echo "Error: " . $e->getMessage();
+// } -->
+
 <div class="container">
     <div class="card">
         <div class="card-header">Mobile Banking Login</div>
 
         <div class="card-body">
+            @if($errors->any())
+                <div class="alert alert-danger">
+                    {{ $errors->first() }}
+                </div>
+            @endif
             <form method="POST" action="{{ route('login') }}">
                 @csrf
 
@@ -113,8 +155,8 @@
                     @enderror
                 </div>
 
-                <button type="submit" class="btn">Login</button>
-            </form>
+                <button  class="btn" onclick="">Login</button>
+            <!-- </form> -->
 
             <a href="password/reset" class="btn-link">Lupa Kata Sandi?</a>
             <a href="register" class="btn-link">Daftar Akun</a>

@@ -50,4 +50,10 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function getAuthPassword()
+    {
+        return $this->password;
+    }
+
 }

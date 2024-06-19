@@ -33,6 +33,6 @@ class DashboardController extends Controller
     }
     public function register()
     {
-        return view('register');
+        return view('auth/register');
     }
 }
